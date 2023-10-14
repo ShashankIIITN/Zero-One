@@ -1,0 +1,282 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  padding: 2px;
+}
+
+.navbar {
+  background-color: #131314;
+}
+
+.tab-pane {
+  background-color: #222327;
+}
+
+.tabbar {
+  color: white;
+  background-color: #19191a;
+}
+
+.navbar {
+  background: black;
+}
+
+.navbar .navbar-brand {
+  color: white;
+}
+
+/* Change the text color for links in the navbar */
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+
+/* Change the text color for buttons in the navbar */
+.navbar .btn {
+  color: white;
+}
+
+/* If you want to change the toggler icon color, you can do so like this */
+.navbar .navbar-toggler-icon {
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.chatMenu {
+  background-color: rgb(193, 198, 198);
+}
+
+.chatMenu {
+  margin-top: 10px;
+  border-radius: 15px;
+  background-color: #131314;
+}
+
+.chatMenu::-webkit-scrollbar {
+  width: 2px;
+}
+
+.chatMenu::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.chatMenu::-webkit-scrollbar-thumb {
+  background: #01fff4;
+  border-radius: 10px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  /* margin: 10px 0px 10px 0px; */
+}
+
+.mee {
+  /* position: relative; */
+  text-align: justify;
+  padding: 3px;
+  border-radius: 5px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  margin: 0px 20px 0px 300px;
+  width: fit-content;
+  margin-top: 10px;
+
+}
+
+.applogo {
+  width: 40px;
+  padding-right: 10px;
+  border-radius: 50%;
+}
+
+.icon {
+  float: right;
+  /* position: absolute; */
+}
+
+.icon2 {
+  float: right;
+  padding-right: 20px;
+}
+
+.icon3 {
+  float: left;
+  padding-right: 10px;
+}
+
+.sender {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.transparent-input {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Adjust the last value (alpha) to control transparency */
+  border: none;
+  /* Remove the border if needed */
+  border-radius: 15px;
+}
+
+.transparent-button {
+  color: #131314;
+  background-color: #01fff4;
+  /* Adjust the last value (alpha) to control button transparency */
+  border: none;
+  /* Remove the button border if needed */
+  border-radius: 15px;
+}
+
+/* You can also style other properties like text color, padding, etc. to match your design */
+
+.aboutus {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.aboutus ul {
+  text-decoration: none;
+}
+
+.respo {
+  padding-left: 20px;
+  padding-top: 5px;
+  margin-right: 100px;
+}
+
+.bott {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.person {
+  /* position:relative; */
+  float: left;
+  width: 53px;
+  padding-top: 5px;
+  border-radius: 50%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.asking {
+  padding-left: 150px;
+  padding-right: 80px;
+}
+
+.text-secondary {
+  text-align: justify;
+  padding: 3px;
+  margin: 0px 300px 0px 20px;
+  border-radius: 5px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  width: fit-content;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.chatMenu {
+  border: 2px solid black;
+  padding-top: 10px;
+  height: 80%;
+  overflow-y: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.tab-content {
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-pills {
+  width: 25%;
+}
+
+.nav-link {
+  color: white;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #f9fafa;
+}
+
+.model {
+  background-color: #848585;
+  padding: 0px;
+}
+
+.buttonmodal {
+  padding-bottom: 10px;
+}
+
+.rename {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Adjust the last value (alpha) to control transparency */
+  border: none;
+  /* Remove the border if needed */
+  border-radius: 15px;
+}
+
+.navmodal .modal-title {
+  float: left;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.navmodal button {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.last .btn {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

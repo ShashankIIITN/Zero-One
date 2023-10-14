@@ -1,0 +1,41 @@
+version: "3"
+
+intents:
+
+  - hello
+  - thank_you
+
+  # - get_motivation
+
+
+
+responses:
+
+  utter_hello:
+  - text: "Hello! I am Bob the Bot an AI assistant for students of  IIIT Nagpur.\nHow can I assist you today?"
+
+  utter_what_can_you_do:
+  - text: "I can  explain mathematical concepts, suggest effective study techniques, recommend suitable extracurricular activities, and provide motivational advice, etc."
+
+  utter_thank_you:
+  - text: "Welcome"
+  
+  # utter_motivation:
+  #   - text: "Sure, here's a motivational quote for you:\n{quote}"
+  #   - text: "Here's a motivational quote to inspire you:\n{quote}"
+
+
+actions:
+  - bard_call
+  # - action_motivate
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
+# session_config:
+#   session_expiration_time: 60
+#   carry_over_slots_to_new_session: true
+#   session_persistence: true

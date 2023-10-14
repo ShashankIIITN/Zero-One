@@ -1,0 +1,24 @@
+version: "3"
+
+rules:
+
+- rule: When the user says "hello"
+  steps:
+  - intent: hello
+  - action: utter_hello
+
+- rule: When the user says "thanks"
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- rule: When the use says "what can you do"
+  steps:
+  - intent: what_can_you_do
+  - action: utter_what_can_you_do
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: bard_call
+

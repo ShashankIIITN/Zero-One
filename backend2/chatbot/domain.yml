@@ -1,0 +1,64 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+  - what_can_you_do
+
+  - social
+
+  - language_for_cp
+  - freshers
+  
+
+responses:
+  utter_greet:
+  - text: "Hello! I am Bob the Bot an AI assistant for students of  IIIT Nagpur.\nHow can I assist you today?"
+
+  utter_cheer_up:
+  - text: "Don't give up. Great things take time. Keep learning, keep growing, and keep pushing forward. Your hard work will pay off.\nHere is something to cheer you up:"
+    image: "https://cataas.com/cat/says/hello%20world!"
+
+  utter_what_can_you_do:
+  - text: "I can  explain mathematical concepts, suggest effective study techniques, recommend suitable extracurricular activities, and provide motivational advice, etc."
+
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am Bob the Bot made by team Zero-One."
+
+  utter_motivate:
+  - text: "Don't give up. Great things take time. Keep learning, keep growing, and keep pushing forward. Your hard work will pay off."
+  
+
+  utter_social:
+  - text: "For the growth of students in all the areas of their interest the IIIT Nagpur envolve the students from CSE and ECE to participate in various activities such as Technical events, workshops, social out reach, sports, Swacha Bharat, entrepreneurship, intership, etc.\nThe various activities at IIIT Nagpur are;\n1) National Level Technical Event:  TantraFiesta\n2) National Level Cultural Event: Abhivyakti\n3) Institute Annual Sports Gathering (IG) : Institute Gathering"
+
+  utter_language_for_cp:
+  - text: "Majority of the students at IIIT nagpur use CPP as the primary language for competitive program as it is faster than most of the other languages. SO I suggest cpp python is also recommended for people who like fewer lines of code."
+
+
+  utter_freshers:
+  - text: "Accoring to 2nd , 3rd and 4th years; you must learn a development skill as well as learn DSA. This helps in placment of the students in the final year."
+
+actions:
+  - bard_call
+  # - action_motivate 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

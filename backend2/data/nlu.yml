@@ -1,0 +1,42 @@
+version: "3"
+
+nlu:
+
+- intent: hello
+  examples: |
+    - hello
+    - hi
+    - greetings
+    - hi there
+    - hey
+
+- intent: thank_you
+  examples: |
+    - thank you
+    - thanks
+    - appreciate it
+    - much obliged
+    - thanks a lot
+
+- intent: extracurricular_activities
+  examples: |
+    - activities
+    - extra
+    - fests
+
+- intent: what_can_you_do
+  examples: |
+    - what can you do
+    - features
+
+# - intent: get_motivation
+#   examples: |
+#     - Give me a motivational quote
+#     - I need some inspiration
+#     - Can you motivate me?
+
+
+
+- intent: dbms_helper
+  examples: |
+    - dbms

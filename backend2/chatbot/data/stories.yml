@@ -1,0 +1,64 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: features
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_can_you_do
+  - action: utter_what_can_you_do
+
+
+
+
+
+- story: features
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: social
+  - action: utter_social
+
+
+- story: language
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: language_for_cp
+  - action: utter_language_for_cp
+  
+- story: freshers
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: freshers
+  - action: utter_freshers

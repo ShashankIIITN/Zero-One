@@ -1,0 +1,4 @@
+- story: Get Motivation
+  steps:
+    - intent: get_motivation
+    - action: utter_motivation
